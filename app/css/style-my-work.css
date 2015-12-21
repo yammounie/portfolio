@@ -1,0 +1,336 @@
+.projects{
+	margin: 0 20px;
+}
+.projects .projects-list{
+	margin: 0 0 0 -25px;
+	padding: 0;
+}
+.projects-list .projects-item{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 38px;
+	margin-left: 24px;
+	text-align: center;
+	vertical-align: top;
+	width: 184px;
+}
+.project-img{
+	border: 2px solid #3BA8C0;
+	border-radius: 4px;
+}
+.project-img-cont{
+	width: 97%;
+  height: 135px;
+	border:2px solid #3ba8c0;
+	border-radius: 4px;
+	overflow: hidden;	
+	position: relative;
+	margin-bottom: 5px;
+}
+.link-block{
+	background: rgba(1, 108, 164, 0.6);
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 80px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: .9s;
+	-moz-transition: .9s;
+	-ms-transition: .9s;
+	-o-transition: .9s;
+	transition: .9s;
+	border-radius: 4px;
+}
+.link-block:hover{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.img-link{
+	display: inline-block;
+	width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.hidden-link{
+	margin: 0 auto;
+  margin-left: 0px;
+  display: inline-block;
+	color: #fff;
+	font-size: 0.8em;
+	border:2px solid #fff;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-top:55px;
+  line-height: 18px;
+}
+.img-link:hover .img-link{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+/* info */
+.project-info{
+	font-size: 15px;
+	margin: 5px 0;
+	line-height: 1.2;
+}
+.projects-link{
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'fira_sanslight_italic';
+  color: #3BA8C0;
+}
+
+/* ADD */
+.projects .project-add{
+	border: 1px dashed #3BA8C0;
+	height: 127px;
+	border-radius: 4px;
+	background-color: #EDF8FC;
+}
+.project-add-img{
+	position: absolute;
+	background-image: url(../img/add-img.png);
+}
+.add-img{
+	padding-top: 35px;
+}
+.projects .add-link {
+	text-decoration: none;
+	font-family: 'fira_sanslight';
+	font-size: 14px;
+	color: #3BA8C0;
+}
+.projects .add-item{
+	margin-top: 0;
+}
+
+/* popup */
+.add-project-container{
+	width: 350px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.form-add-project-wrap{
+	height: 65px;
+	background: #67DFFA;
+}
+.form-add-project-header{
+	background: #48CBE8;
+	padding: 10px 0 10px 20px;
+	font-family: 'fira_sansbook';
+	font-size: 22px;
+	color: #EFF3F7;
+	box-shadow: 0 15px 0 #67DFFA;
+}
+.form-add-project-head{
+	width: 250px;
+	display: inline-block;
+}
+.form-close{
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: -5px;
+	right: 5px;
+}
+.form-add-project{
+	padding: 10px 25px 25px 25px;
+	background: #fff;
+}
+.label{
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	color: #A2A8B4;
+}
+.form-add-input{
+	-webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size: 12px;
+	width: 100%;
+	padding: 12px 12px;
+	display: block;	
+	height: 41px;
+	color: #48cbe8;
+	background-color: #fff;
+	border: 1px solid rgb(72, 203, 232);
+	border-radius: 4px;
+	outline: none;
+}
+/* placeholder */
+*::-webkit-input-placeholder {
+    color: #48cbe8;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #48cbe8;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #48cbe8;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #48cbe8;
+}
+input, textarea, button {
+	outline: none;
+}
+.group-input{
+	padding-bottom: 10px;
+}
+.form-add-button{
+	border-radius: 5px;
+	background-color: rgb(72, 203, 232);
+	height: 33px;
+	border:solid #3ba8c0;
+	border-width: 0 0 2px 0;	
+	color: #f6f6f6;
+	font-family: 'fira_sansbook';
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 0 0 0 80px;
+}
+.form-add-button:active{
+	border-top: solid 2px #3ba8c0;
+}
+.form-add-button:hover{
+	border-bottom: none;
+}
+
+/* добавление картинки */
+
+.fileupload-wrapper {
+  width: 100%;
+  position: relative;
+}
+.fileupload-lable{
+	display: block;
+  width: 52px;
+  height: 41px;
+	position: absolute;
+  right: 0;
+	background: url(../img/7.png) 10px 7px no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 4px 4px 0;
+}
+.fileupload{ /* хак, взятый из html5boilerplate */
+	border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.submit{
+	display: none;
+}
+/* _____________ // file upload end _________ */
+
+/* _____________ тултипы _________ */
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	font-family: 'Arial';
+	color: #ffffff;
+	font-size: 13px;
+}
+
+/* добавление картинки конец*/
+
+/* add popup*/
+.add-project-container{
+	display: none;
+}
+
+/* ошибка*/
+.add-project-error-wrap{
+	border: 1px solid #F97E76;
+	background: #F2CCCD;
+	border-radius: 4px;
+	display: none;
+}
+.add-project-error-close,
+.add-project-error{
+	display: inline-block;
+	padding: 0 0 0 10px;
+	margin: 0;
+	font-family: 'fira_sansbook';
+	color: #F97E76; 
+}
+.add-project-error{
+	width: 250px;
+}
+.add-project-error1,
+.add-project-error-close{
+	font-size: 22px;
+}
+.add-project-error-close{
+	float: right;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: -8px;
+}
+/* ошибка конец*/
+/* проект успешно добавлен */
+.add-project-done-wrap{
+	border: 1px solid #49bb7b;
+	background: #b8e1ce;
+	border-radius: 4px;
+	display: none;
+}
+.add-project-done-close,
+.add-project-done{
+	display: inline-block;
+	padding: 0 0 0 10px;
+	margin: 0;
+	font-family: 'fira_sansbook';
+	color: #49bb7b; 
+}
+.add-project-done{
+	width: 250px;
+}
+.add-project-done1,
+.add-project-done-close{
+	font-size: 22px;
+}
+.add-project-done-close{
+	float: right;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: -8px;
+}
+.group-input-picture{
+	padding-bottom: 10px;
+}
+.input-add-picc{
+	-webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size: 12px;
+	width: 100%;
+	padding: 12px 12px;
+	display: block;	
+	height: 41px;
+	color: #48cbe8;
+	background-color: #fff;
+	border: 1px solid rgb(72, 203, 232);
+	border-radius: 4px;
+	outline: none;
+}
+/* проект успешно добавлен конец */
+.has-error{
+	border: 1px solid #F97E76;
+	background: #F2CCCD;
+	border-radius: 4px;
+}

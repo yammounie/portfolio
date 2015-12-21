@@ -1,0 +1,150 @@
+/* Общие стили для весх секций  */
+.aboutbox{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	padding-bottom: 9px;
+	width: 650px;
+}
+.aboutbox .aboutbox-header{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 17px 0;
+	padding: 12px 21px;
+	display: inline-block;
+}
+.about-body{
+	padding-bottom: 40px;
+}
+
+/* Общие стили для весх секций - конец */
+.variable-content{
+	float: right;
+}
+
+
+/* Лицо */
+
+.avatar-box{
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+	border-radius: 50%;
+	border: 4px solid #31A6BD;
+	height: 142px;
+	width: 142px;
+	overflow: hidden;
+}
+.avatar{
+	height: 150px;
+	width: 150px;
+}
+.aboutbox-body{
+	padding-bottom: 40px; 
+}
+.clearfix:after,
+.clearfix:before, .container:after,
+.container:before{
+	display: table;
+	content: '';
+}
+.clearfix:after,
+.container:after{
+	clear: both;
+}
+ul{
+	list-style: none;
+}
+
+.aboutbox .worksheet-wrap{
+	float: right;
+	width: 422px;
+}
+.worksheet-list{
+	padding: 0;
+	margin: 0;
+}
+.worksheetitem{
+	margin-bottom: 8px;
+	display: list-item;
+}
+.worksheet-what{
+	font-family: "fira_sansmedium";
+	font-size: 16px;
+	float: left;
+}
+.worksheet-info{
+	font-family: "fira_sansbook";
+	font-size: 15px;
+	float: left;
+	overflow: hidden;
+	max-width: 218px;
+	margin-left: 25px;
+}
+.worksheet-info .skills-list{
+	width: 224px;
+	padding: 0;
+	list-style: none;
+}
+.skills-list .skill-item{
+	font-family: 'proxima_nova_condensedSBd';
+	line-height: 1.2;
+	display: inline-block;
+	min-width: 40px;
+	margin-right: 6px;
+	padding: 0 7px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	
+	background: #3ba8c0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3ba8c0 0%, #3ba8c0 49%, #3ba8c0 49%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%, #2e8ca2 100%, #2e8ca2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #3ba8c0 0%,#3ba8c0 49%,#3ba8c0 49%,#3ba8c0 50%,#2e8ca2 51%,#2e8ca2 100%,#2e8ca2 100%,#2e8ca2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #3ba8c0 0%,#3ba8c0 49%,#3ba8c0 49%,#3ba8c0 50%,#2e8ca2 51%,#2e8ca2 100%,#2e8ca2 100%,#2e8ca2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Образование  */
+
+.aboutbox .icon-college{
+	background: url(../img/course.png) no-repeat;
+	background-position: 10px center;
+}
+.aboutbox .icon-course{
+	background: url(../img/course.png) no-repeat;
+	background-position: 10px center;
+}
+
+.aboutbox .aboutbox-item{
+	padding: 0 0 0 79px;
+	margin-bottom: 11px;
+}
+.aboutbox-item .icon-work{
+	margin-bottom: 30px;
+}
+.aboutbox-item{
+	margin-bottom: 30px;
+}
+.where{
+	font-family: 'fira_sansregular';
+}
+.period{
+	font-size: 13px;
+}
+.aboutbox .icon-work{
+	background: url(../img/job.png) no-repeat;
+	background-position: 10px center;
+}
+.workbox{
+	margin-top: -13px;
+	margin-left: 8px;
+}
+
+.aboutbox-list-education{
+	margin: 0;
+	margin-left:12px;
+}
