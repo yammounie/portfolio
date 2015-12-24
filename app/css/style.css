@@ -187,10 +187,30 @@ body{
 .contacts .contacts-list .item-skype{
 	background-color: #51DAF8;
 }
-
 /* контакты - конец*/
+
 /* прибитый футер */
 .wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -80px 0;
+	padding: 0;
+	position: relative;
+}
+.page-footer{
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.wrapper:after{
+	content: " ";
+	height: 80px;
+	display: block;
+}
+
+/*.wrapper{
 	position: relative;
 	min-height: 100%;
 	min-width: 970px;

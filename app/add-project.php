@@ -1,11 +1,11 @@
 <?php
 
-	$name = $_POST['projectNmae'];
+	$name = $_POST['projectName'];
 	$data = array();
 
 	if ($name === '') {
 		$data['status'] = 'error';
-		$data['text'] = 'Заоплните имя!';
+		$data['text'] = 'Заполните имя!';
 	}else{
 		$data['status'] = 'OK';
 		$data['text'] = 'Вы молодец, не забыли заполнить имя';

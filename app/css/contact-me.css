@@ -170,3 +170,9 @@ input, textarea, button {
 	background: #F2CCCD;
 	border-radius: 4px;
 }
+.error-mes{
+	border: 1px solid #F97E76;
+	background: #F2CCCD;
+	border-radius: 4px;
+	display: none;
+}

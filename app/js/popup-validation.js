@@ -38,9 +38,6 @@ var validation = (function () {
 					}).trigger('show')
 
 
-
-
-
 				} else {
 					valid = true;
 				}

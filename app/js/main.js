@@ -41,22 +41,6 @@ var addProject = (function (){
 	      }
     	};
 
-	var _ajaxForm = function (form, url) {
-
-	      if (!validation.validateForm(form)) return false;  // Возвращает false, если не проходит валидацию
-	      var data = form.serialize(); // собираем данные из формы в объект data
-
-	      return $.ajax({ // Возвращает Deferred Object
-	        type: 'POST',
-	        url: url,
-	        dataType : 'JSON',
-	        data: data
-	      }).fail( function(ans) {
-	        console.log('Проблемы в PHP');
-	        form.find('.error-mes').text('На сервере произошла ошибка').show();
-	      });
-	};
-
 	return {
 		init: init
 	};
