@@ -176,3 +176,9 @@ input, textarea, button {
 	border-radius: 4px;
 	display: none;
 }
+.success-mes{
+	border: 1px solid #49BB7B;
+	background: #B8E1CE;
+	border-radius: 4px;
+	display: none;
+}

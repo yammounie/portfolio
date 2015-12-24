@@ -133,6 +133,10 @@
 								</div>
 									<!-- форма -->
 									<form id="add-new-project" class="form-add-project">
+
+									<!-- Вывод сообщений с сервера -->
+                  <div class="server-mes error-mes"></div>
+                  <div class="server-mes success-mes"></div>
 									
 									<!-- ошибка -->
 									<div class="add-project-error-wrap">
@@ -150,7 +154,7 @@
 									<!-- конец проект успешно добавлен -->
 									<div class="group-input">
 										<label for="project-name" class="label">Название проекта</label>
-										<input type="text" class="form-add-input" placeholder="Введите название" qtip-content="Введите название">
+										<input type="text" class="form-add-input input" placeholder="Введите название" qtip-content="Введите название">
 									</div>
 									<div class="group-input-picture">
 										 <div class="form-group">						
@@ -166,11 +170,11 @@
 									</div>
 									<div class="group-input">
 										<label for="project-name" class="label">URL проекта</label>
-										<input type="text" class="form-add-input" placeholder="Добавьте ссылку" qtip-content="Введите url">
+										<input type="text" class="form-add-input input" placeholder="Добавьте ссылку" qtip-content="Введите url">
 									</div>
 									<div class="group-input">
 										<label for="project-name" class="label">Описание</label>
-										<input type="text" class="form-add-input" placeholder="Пара слов о вашем проекте" qtip-content="Введите описание">
+										<input type="text" class="form-add-input input" placeholder="Пара слов о вашем проекте" qtip-content="Введите описание">
 									</div>
 										<button type="submit" class="form-add-button">Добавить</button>
 									</form>
@@ -192,8 +196,6 @@
 	<script src="bower/bpopup/jquery.bpopup.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>
 	<script src="js/add-project.js"></script>
-	<script src="js/add-pic.js"></script>
 	<script src="js/validation.js"></script>
-	<script src="js/main.js"></script>
 </body>
 </html>

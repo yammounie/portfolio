@@ -51,7 +51,7 @@ var validation = (function () {
 			event: 'show'
 		},
 		hide: {
-			event: 'keydown hideTooltip'
+			event: 'keydown hideTooltip reset'
 		},
 		position: position,
 		style: {

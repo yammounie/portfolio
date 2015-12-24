@@ -16,7 +16,7 @@ var contactMe = (function () {
 		ev.preventDefault();
 
 		var form = $(this),
-		url = 'contactme.php',
+		url = 'contact-me.php',
 		defObj = _ajaxForm(form, url);
 		// что-то будем делать с ответом с сервера defObj
 	};
@@ -62,13 +62,17 @@ var contactMe = (function () {
 			type: 'POST',
 			dataType: 'json',
 			data: data,
-		}).fail( function(ans) {
+		}).fail(function(ans) {
 			console.log('проблемы в php');
 			form.find('.error-mes').text('На сервере произошла ошибка').show();
+		}).done(function(ans){
+			console.log('done');
+			form.find('.success-mes').text('Проект успешно добавлен').show();
 		});
 
 		return result;
 	};
+	
 
 	//Возвращает объект (публичные методы)
 	return {
