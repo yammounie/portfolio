@@ -1,3 +1,10 @@
+if(typeof console === 'undefined' || typeof console.log === 'undefined') {
+                var console = {};
+                console.log = function(){
+                };
+        }
+
+
 var myModule = (function () {
 
 	// Инициализирует наш модуль
